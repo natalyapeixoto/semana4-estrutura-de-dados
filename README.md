@@ -3,7 +3,7 @@
 * Objetos 
 
 
-### Arrays 
+## Arrays 
 
 Uma array é uma coleção ordenada de itens, onde cada item tem um índice(index). 
      
@@ -22,7 +22,7 @@ Uma array é uma coleção ordenada de itens, onde cada item tem um índice(inde
    console.log(misturado) // logs ["1", 2, "três", false, "abc", 5.6]
 
 
-###### métodos de Arrays
+#### métodos de Arrays
 
 Objetos do tipo Array contém, além da propriedade length, inúmeras outras propriedades que se referem à valores de função(métodos).
 
@@ -34,9 +34,9 @@ Alguns exemplos:
 concat, pop, join, push, split, splice, reverse, slice, indexof, typeof, trim... 
 
 
-### Array bidimensionais 
+## Array bidimensionais 
 São arrays que contém arrays. 
-
+ 
 Arrays com duas dimensões costumam ser utilizados para representar tabelas de valores que consistem nas informações dispostas em *linhas* e *colunas*. Para identificar um elemento da tabela particular, devem ser especificados dois índices. Por convenção, o primeiro identifica a linha do elemento e o segundo, sua coluna.
 
 const array = [
@@ -54,11 +54,11 @@ const x = [1,[2,3], [4,[5,[6,7,8]]], [9,[10,11,[12,13]]]];
 console.log(x[2][1][1])  // logs [6, 7, 8]
     
 
-### Objetos 
+## Objetos 
 
  * Um objeto é uma coleção de propriedades, e uma propriedade é uma associação entre um nome (ou chave) e um valor. Um valor de propriedade pode ser uma função, que é então considerada um *método* do objeto. 
 
-###### Criando um objeto:
+#### Criando um objeto:
 
 var pessoa = {};
 pessoa.nome = 'jonas'
@@ -67,9 +67,9 @@ pessoa.idade = 29
 console.log(pessoa) // logs {nome: "jonas", idade: 29}
 
 
-####### Adicionando um método:
+#### Adicionando um método:
 
-pessoa.falar = function() {
+````pessoa.falar = function() {
     console.log(`Oi, meu nome é ${pessoa.nome} eu tenho ${pessoa.idade} anos.`)
 }
 
@@ -83,14 +83,14 @@ pessoa = {
     falar: function() {
         console.log(`Oi, meu nome é ${pessoa.nome} eu tenho ${pessoa.idade} anos.`)
     }
-}
+} ````
 
 
-###### Acessando objetos 
+#### Acessando objetos 
 
 Dot notation vs Bracket notation 
-pessoa.nome // jonas
-pessoa['nome'] // jonas
+````pessoa.nome // jonas
+pessoa['nome'] // jonas ````
 
 Por padrão prefira usar o '.' ou dot notation, é mais fácil de ler e mais rápido de escrever.
 Apenas em alguns caso específicos usamos os brackets(colchetes). Por exemplo, quando a propriedade começa com número ou for uma string que tenha mais de um nome (ex: 'thank-you'). 
@@ -105,27 +105,27 @@ Esse método caminha por todas as propriedades enumeráveis de um objeto.
 checa se o Objeto tem x propriedade e retorna true ou false. 
 
 
-###### This 
+#### This 
 Em um método 'this' faz referencia ao proprio objeto 
 
-var obj = {
-    firstName: 'joao', 
-    lasName: 'melão'
+  ````var obj = {
+        firstName: 'joao', 
+        lasName: 'melão'
 
-    fullName : function() {
-        return this.firstName + " " + this.lastName;
+        fullName : function() {
+            return this.firstName + " " + this.lastName;
+        }
     }
-}
 
-obj.fullName() // logs joao melão 
+    obj.fullName() // logs joao melão ````
 
-### Estruturas de dados complexas 
+## Estruturas de dados complexas 
 
 Objetos nos permitem agrupar valores - incluindo outros objetos - juntos e assim construir estruturas mais complexas.
 
 Criar projeto que lista todas as aulas da sala e também filtra alunas por id.
 
-#### Extra: 
+### Extra: 
 
 Map, filter, Reduce, forEach 
 
