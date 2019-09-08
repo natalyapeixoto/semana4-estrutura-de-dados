@@ -83,7 +83,8 @@ pessoa = {
     falar: function() {
         console.log(`Oi, meu nome é ${pessoa.nome} eu tenho ${pessoa.idade} anos.`)
     }
-} ````
+} 
+````
 
 
 #### Acessando objetos 
@@ -107,8 +108,8 @@ checa se o Objeto tem x propriedade e retorna true ou false.
 
 #### This 
 Em um método 'this' faz referencia ao proprio objeto 
-
-  ````var obj = {
+````
+    var obj = {
         firstName: 'joao', 
         lasName: 'melão'
 
@@ -117,7 +118,8 @@ Em um método 'this' faz referencia ao proprio objeto
         }
     }
 
-    obj.fullName() // logs joao melão ````
+    obj.fullName() // logs joao melão 
+````
 
 ## Estruturas de dados complexas 
 
