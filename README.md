@@ -94,19 +94,22 @@ Temos então a seguinte estrutura chave-valor:
 #### Acessando objetos 
 
 Dot notation vs Bracket notation 
-````pessoa.nome // jonas
-pessoa['nome'] // jonas ````
+````
+    pessoa.nome // jonas
+    pessoa['nome'] // jonas 
+
+````
 
 Por padrão prefira usar o '.' ou dot notation, é mais fácil de ler e mais rápido de escrever.
 Apenas em alguns caso específicos usamos os brackets(colchetes). Por exemplo, quando a propriedade começa com número ou for uma string que tenha mais de um nome (ex: 'thank-you'). 
 
-* Object.keys -
+* `Object.keys` -
 Esse método retorna um array com todos os nomes ("chaves") de propriedades próprios de um objeto.
 
-* for...in loops
+* `for...in` loops
 Esse método caminha por todas as propriedades enumeráveis de um objeto.
 
-* Object.hasOwnProperty(nome-da-propriedade)
+* `Object.hasOwnProperty(nome-da-propriedade)`
 checa se o Objeto tem x propriedade e retorna true ou false. 
 
 
