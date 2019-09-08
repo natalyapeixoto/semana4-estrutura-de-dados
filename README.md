@@ -61,31 +61,34 @@ console.log(x[2][1][1])  // logs [6, 7, 8]
 #### Criando um objeto:
 
 ```   
-    var pessoa = {};
+    const pessoa = {};
     pessoa.nome = 'jonas'
     pessoa.idade = 29 
+
+    console.log(pessoa) // logs {nome: "jonas", idade: 29}
 ```
-```console.log(pessoa) // logs {nome: "jonas", idade: 29}```
 
 
 #### Adicionando um método:
 
-````pessoa.falar = function() {
-    console.log(`Oi, meu nome é ${pessoa.nome} eu tenho ${pessoa.idade} anos.`)
+````
+pessoa.falar = function() {
+console.log(`Oi, meu nome é ${pessoa.nome} eu tenho ${pessoa.idade} anos.`)
 }
 
 console.log(pessoa.falar()) // Oi, meu nome é jonas eu tenho 29 anos.
+````
 
 Temos então a seguinte estrutura chave-valor:
-
-pessoa = {
-    nome: 'jonas', 
-    idade: 29, 
-    falar: function() {
-        console.log(`Oi, meu nome é ${pessoa.nome} eu tenho ${pessoa.idade} anos.`)
-    }
-} 
-````
+```
+    pessoa = {
+        nome: 'jonas', 
+        idade: 29, 
+        falar: function() {
+            console.log(`Oi, meu nome é ${pessoa.nome} eu tenho ${pessoa.idade} anos.`)
+        }
+    } 
+```
 
 
 #### Acessando objetos 
