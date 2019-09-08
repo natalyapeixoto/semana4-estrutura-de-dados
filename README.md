@@ -129,6 +129,19 @@ Em um método 'this' faz referencia ao proprio objeto
     obj.fullName() // logs joao melão 
 ````
 
+#### Função Construtora
+
+```
+function Pessoa(nome, age, profissao) {
+  this.nome = nome;
+  this.age = age;
+  this.profissao = profissao;
+}
+
+const friend = new Pessoa('laura', 28, 'desenvolvedora');
+
+```
+
 ## Estruturas de dados complexas 
 
 Objetos nos permitem agrupar valores - incluindo outros objetos - juntos e assim construir estruturas mais complexas.
