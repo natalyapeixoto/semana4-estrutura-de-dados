@@ -50,10 +50,11 @@ console.log(array[0][0]) // logs 'apple'
 
 
 Arrays multidimensionais
+```
 const x = [1,[2,3], [4,[5,[6,7,8]]], [9,[10,11,[12,13]]]];
 
 console.log(x[2][1][1])  // logs [6, 7, 8]
-    
+```    
 
 ## Objetos 
 
