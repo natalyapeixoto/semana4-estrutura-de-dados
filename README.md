@@ -56,15 +56,16 @@ console.log(x[2][1][1])  // logs [6, 7, 8]
 
 ## Objetos 
 
- * Um objeto é uma coleção de propriedades, e uma propriedade é uma associação entre um nome (ou chave) e um valor. Um valor de propriedade pode ser uma função, que é então considerada um *método* do objeto. 
+  Um objeto é uma coleção de propriedades, e uma propriedade é uma associação entre um nome (ou chave) e um valor. Um valor de propriedade pode ser uma função, que é então considerada um *método* do objeto. 
 
 #### Criando um objeto:
 
-var pessoa = {};
-pessoa.nome = 'jonas'
-pessoa.idade = 29 
-
-console.log(pessoa) // logs {nome: "jonas", idade: 29}
+```   
+    var pessoa = {};
+    pessoa.nome = 'jonas'
+    pessoa.idade = 29 
+```
+```console.log(pessoa) // logs {nome: "jonas", idade: 29}```
 
 
 #### Adicionando um método:
