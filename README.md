@@ -39,7 +39,7 @@ concat, pop, join, push, split, splice, reverse, slice, indexof, typeof, trim...
 São arrays que contém arrays. 
  
 Arrays com duas dimensões costumam ser utilizados para representar tabelas de valores que consistem nas informações dispostas em *linhas* e *colunas*. Para identificar um elemento da tabela particular, devem ser especificados dois índices. Por convenção, o primeiro identifica a linha do elemento e o segundo, sua coluna.
-
+```
 const array = [
     ['apple', 'orange', 'pear'],
     ['maça', 'laranja', 'pera'],
@@ -47,7 +47,7 @@ const array = [
 ];
 
 console.log(array[0][0]) // logs 'apple'
-
+```
 
 Arrays multidimensionais
 ```
