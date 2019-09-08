@@ -16,11 +16,12 @@ Uma array é uma coleção ordenada de itens, onde cada item tem um índice(inde
     *arrays em JavaScript tem o índice começando no zero.*  
 
 
-   - Arrays podem conter vários tipos de dados - 
+   Arrays podem conter vários tipos de dados
+```    
    const variavel = 'abc'
    const misturado = ['1', 2, 'três', false, variavel, 5.6];
    console.log(misturado) // logs ["1", 2, "três", false, "abc", 5.6]
-
+```
 
 #### métodos de Arrays
 
@@ -60,7 +61,7 @@ console.log(x[2][1][1])  // logs [6, 7, 8]
 
 #### Criando um objeto:
 
-```   
+``` 
     const pessoa = {};
     pessoa.nome = 'jonas'
     pessoa.idade = 29 
@@ -97,7 +98,6 @@ Dot notation vs Bracket notation
 ````
     pessoa.nome // jonas
     pessoa['nome'] // jonas 
-
 ````
 
 Por padrão prefira usar o '.' ou dot notation, é mais fácil de ler e mais rápido de escrever.
