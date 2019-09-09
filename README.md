@@ -156,9 +156,11 @@ Map, filter, Reduce, forEach
 - https://medium.com/@programadriano/javascript-conhecendo-map-filter-e-reduce-ce072d8f0ec5]
 - https://clovisdasilvaneto.github.io/explorando-javascript-filter-reduce-map-every-some-e-foreach/
 
+ JSON  
 
 #### Links: 
-- https://www.w3schools.com/js/js_array_methods.asp
-- http://braziljs.github.io/eloquente-javascript/chapters/estrutura-de-dados/
-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
-- https://developer.mozilla.org/pt-BR/docs/Aprender/JavaScript/Objetos/B%C3%A1sico
+- W3Schools Métodos de Arrays - https://www.w3schools.com/js/js_array_methods.asp
+- Eloquente JavaScript - http://braziljs.github.io/eloquente-javascript/chapters/estrutura-de-dados/
+- MDN Arrays - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+- MDN Objetos - https://developer.mozilla.org/pt-BR/docs/Aprender/JavaScript/Objetos/B%C3%A1sico
+- Clean Code 
