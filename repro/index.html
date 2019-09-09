@@ -10,25 +10,30 @@
 <body>
     <h1>Lista de professoras e alunas</h1>
 
-    <div class="container">
-        <input type="text" placeholder="escreva o nome da aluna aqui">
-        <button id="enviarAluna">Enviar</button>
-    </div>
-
-    <div class="container">
-        <input type="text" placeholder="escreva o nome da professora aqui">
-        <button id="enviarProf">Enviar</button>
-    </div>
-
-    <div class="container">
-        <button>Mostrar Alunas</button>
-        <div id="alunas"></div>
-    </div>
+    <div class='page'>
+        <div class='container__enviar'>
+            <div class="container">
+                <input type="text" placeholder="escreva o nome da aluna aqui">
+                <button id="enviarAluna">Enviar</button>
+            </div>
+            <div class="container">
+                <input type="text" placeholder="escreva o nome da professora aqui">
+                <button id="enviarProf">Enviar</button>
+            </div>
+        </div>
     
-    <div class="container">
-        <button>Mostrar Professoras</button>
-        <div id="professoras"></div>
-    </div>    
+        <div class="container__mostrar">
+            <div class="container">
+                <button id="listarAlunas">Mostrar Alunas</button>
+            </div>
+            
+            <div class="container">
+                <button id="listarProfs">Mostrar Professoras</button>
+            </div>    
+        </div>
+    </div>
+    <div id="show" class="display">
+    </div>
 </body>
 <script src="ex-day5.js"></script>
 </html>
