@@ -143,7 +143,7 @@ const friend = new Pessoa('laura', 28, 'desenvolvedora');
 ```
 
 ## Estruturas de dados complexas 
-
+````
 const complex = [
     {user:234, name: 'Marcia', idade:40, hobbies: ['dançar', 'comer', 'falar']},
     {user:235, name: 'Lorena', idade:20, hobbies: ['dançar', 'assistir tv', 'estudar']},
@@ -152,7 +152,7 @@ const complex = [
     {user:238, name: 'Isis', idade:34, hobbies: ['ler', 'escrever', 'discutir']},
     {user:239, name: 'Pietra', idade:23, hobbies: ['jogar dominó', 'sinuca', 'cartas']}
 ]
-
+````
 ### Extra: 
 
 Map, filter, Reduce, forEach 
