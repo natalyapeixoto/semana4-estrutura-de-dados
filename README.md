@@ -144,9 +144,14 @@ const friend = new Pessoa('laura', 28, 'desenvolvedora');
 
 ## Estruturas de dados complexas 
 
-Objetos nos permitem agrupar valores - incluindo outros objetos - juntos e assim construir estruturas mais complexas.
-
-Criar projeto que lista todas as aulas da sala e também filtra alunas por id.
+const complex = [
+    {user:234, name: 'Marcia', idade:40, hobbies: ['dançar', 'comer', 'falar']},
+    {user:235, name: 'Lorena', idade:20, hobbies: ['dançar', 'assistir tv', 'estudar']},
+    {user:236, name: 'Patricia', idade:24, hobbies: ['correr', 'acampar', 'surfar']},
+    {user:237, name: 'Mariana', idade:15, hobbies: ['skate', 'bicicleta', 'break dance']},
+    {user:238, name: 'Isis', idade:34, hobbies: ['ler', 'escrever', 'discutir']},
+    {user:239, name: 'Pietra', idade:23, hobbies: ['jogar dominó', 'sinuca', 'cartas']}
+]
 
 ### Extra: 
 
