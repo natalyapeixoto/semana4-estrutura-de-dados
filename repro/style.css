@@ -40,9 +40,9 @@ button:hover {
 
 input {
     height: 30px;
-    width: 300px;
+    max-width: 300px;
     padding: 5px;
-    border-radius: 10px;
+    border-radius: 5px;
     border: 1px solid black;
 }
 
