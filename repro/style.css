@@ -3,58 +3,42 @@
     font-family: monospace;
 }
 
+h1 {
+    color: rgb(88, 15, 88);
+    text-align: center;
+}
+
 .page {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
 }
 
-h1 {
-    color: rgb(77, 10, 77);
-    text-align: center;
-    font-size: 40px;
+.input-field label {
+   display: block;
+}
+.input-field {
+    margin-top: 20px;
 }
 
-.container {
-    margin: 20px;
-}
-
-.container__mostrar button {
-    width: 220px;
+fieldset {
+    border: none;
+    padding:0;
+    margin-top: 20px;
 }
 
 button {
     border: 1px solid purple;
-    border-radius: 15px;
-    color: white;
-    background-color: purple;
-    padding: 5px 10px;
+    background-color: transparent;
     cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-}
-  
-button:hover {
-    opacity: .8;
-}
-
-input {
-    height: 30px;
-    max-width: 300px;
-    padding: 5px;
+    width: 170px;
     border-radius: 5px;
-    border: 1px solid black;
+    margin-top: 20px;
+    padding: 10px 15px;
+    color: purple;
 }
 
-.display {
-    border: 1px solid grey;
-    width: 80vw;
-    height: 400px;
-    margin: 0 auto;
+button:hover {
+    background-color: purple;
+    color:white;
 }
-
-@media only screen and (max-width: 600px) {
-    .page {
-        flex-direction: column;
-    }
-  }

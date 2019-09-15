@@ -8,31 +8,36 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Lista de professoras e alunas</h1>
+    <h1>Gerenciador de Alunas</h1>
 
     <div class='page'>
-        <div class='container__enviar'>
-            <div class="container">
-                <input type="text" id="inputAluna" placeholder="nome da aluna">
-                <button id="enviarAluna">Enviar</button>
-            </div>
-            <div class="container">
-                <input type="text" placeholder="nome da professora">
-                <button id="enviarProf">Enviar</button>
-            </div>
+        
+        <div class="input-field">
+            <label for="name">Nome da aluna</label>
+            <input type="text" id="name">
         </div>
-    
-        <div class="container__mostrar">
-            <div class="container">
-                <button id="listarAlunas">Mostrar Alunas</button>
-            </div>
-            
-            <div class="container">
-                <button id="listarProfs">Mostrar Professoras</button>
-            </div>    
+        <div class="input-field">
+            <label for="dataDeNascimento">Data de nascimento</label>
+            <input type="data" id="dataDeNascimento" placeholder="dd/mm/aaaa">
         </div>
-    </div>
-    <div id="show" class="display">
+        <fieldset >
+            <legend tabIndex="0">Nasceu em SP?</legend>
+            <input
+                type="radio"
+                name="nasceuEmSp"
+                id="sim"
+                value="sim"
+            />
+            <label for="sim">Sim</label>
+            <input
+                type="radio"
+                name="nasceuEmSp"
+                id="nao"
+                value="nao"
+            />
+            <label for="nao">Não</label>
+        </fieldset>
+        <button id="inputAluna">Enviar</button>
     </div>
 </body>
 <script src="ex-day5.js"></script>
