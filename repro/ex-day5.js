@@ -12,11 +12,14 @@ const checkbox = document.getElementsByName('nasceuEmSp')
 const reprograma = {
 	alunas: [],
 
-	inserirAluna: function(aluna) {},
+	listarAlunas: function(aluna) {},
 
-	listarAlunas: function() {},
+	inserirAluna: function(n, d, s, i) {
+		this.alunas.push(new Aluna(n, d, s, i))
+	},
 
-	listarAlunasDeSP: function() {}
+	listarAlunasDeSP: function() {}, 
+
 }
 
 function Aluna(nome, date, sp, id) {
@@ -29,7 +32,7 @@ function Aluna(nome, date, sp, id) {
 let id = 0
 btnEnviar.addEventListener('click', function(e) {
 	e.preventDefault()
-	//chamar a função inserirAluna aqui
+	reprograma.inserirAluna(nome.value, dateOfBirth.value, nasceuEmSP(), ++id)
 })
 
 function nasceuEmSP() {
