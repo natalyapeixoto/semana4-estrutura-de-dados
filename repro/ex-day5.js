@@ -1,42 +1,34 @@
-// // 1 - escreva o método inserirAluna que vai criar um novo objeto aluna, com propriedades:
-// nome, data de nascimento, mora em são paulo e id. após isso coloque a nova aluna na array alunas.
+// crie uma função construtora (chamada Aluna) que receberá os dados da aluna: nome, data de nascimento, se nasceu em sp, e id.
+// os dados citados acima estão sendo recebidos no eventListener do btnEnviar, exceto pelo id (este deve ser gerado por vc, sempre acrescentando +1)
+// faça com que o método inserirAluna gere a aluna e a coloque no array para guardar alunas
+// escreva o método listarAlunas para que ele liste as alunas e suas propriedades
+// por último, escreva o método listarAlunasDeSp, que irá filtrar, dentre todas as alunas da lista, somente aquelas que nasceram em SP
 
-// // 2- escreva o método listarAlunas, que vai mostrar na tela o nome de todas as alunas que estao na
-// array alunas.
-
-const btnEnviar = document.getElementById('inputAluna')
-const nome = document.getElementById('name')
-const dateOfBirth = document.getElementById('dataDeNascimento')
-const checkbox = document.getElementsByName('nasceuEmSp')
+const btnEnviar = document.getElementById("cadastrarAluna")
+const nome = document.getElementById("name")
+const dateOfBirth = document.getElementById("dataDeNascimento")
+const checkbox = document.getElementsByName("nasceuEmSp")
 
 const reprograma = {
-	alunas: [],
+  // array para guardar alunas cadastradas
+  alunas: [],
 
-	listarAlunas: function(aluna) {},
+  // métodos
+  listarAlunas: function(aluna) {},
 
-	inserirAluna: function(n, d, s, i) {
-		this.alunas.push(new Aluna(n, d, s, i))
-	},
+  inserirAluna: function(n, d, s, i) {},
 
-	listarAlunasDeSP: function() {}, 
-
+  listarAlunasDeSP: function() {}
 }
 
-function Aluna(nome, date, sp, id) {
-	this.nome = nome
-	this.dateOfBirth = date
-	this.nasceuEmSp = sp
-	this.id = id
-}
-
-let id = 0
-btnEnviar.addEventListener('click', function(e) {
-	e.preventDefault()
-	reprograma.inserirAluna(nome.value, dateOfBirth.value, nasceuEmSP(), ++id)
+btnEnviar.addEventListener("click", function(e) {
+  e.preventDefault()
+  console.log(nome.value, dateOfBirth.value, nasceuEmSP())
+  reprograma.inserirAluna(nome.value, dateOfBirth.value, nasceuEmSP())
 })
 
 function nasceuEmSP() {
-	let nasceu
-	checkbox.forEach(item => (item.checked ? (nasceu = item.value) : ''))
-	return nasceu
+  let isChecked
+  checkbox.forEach(item => (item.checked ? (isChecked = item.value) : ""))
+  return isChecked
 }

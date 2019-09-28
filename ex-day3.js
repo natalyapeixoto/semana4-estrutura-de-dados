@@ -47,4 +47,4 @@
 // console no seguinte formato:
 // <propriedade>: <valor
 
-//9 Faça uma função contrutora de pokemon
+//9 Faça uma função construtora de pokemon
