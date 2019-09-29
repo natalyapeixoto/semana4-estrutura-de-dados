@@ -8,13 +8,20 @@ const btnEnviar = document.getElementById("cadastrarAluna")
 const nome = document.getElementById("name")
 const dateOfBirth = document.getElementById("dataDeNascimento")
 const checkbox = document.getElementsByName("nasceuEmSp")
+const btnMostrar = document.getElementById("listarAlunas")
+const div = document.getElementById("mostrarListadeAlunas")
 
 const reprograma = {
   // array para guardar alunas cadastradas
   alunas: [],
 
   // métodos
-  listarAlunas: function(aluna) {},
+  listarAlunas: () => {
+    div.innerHTML = ""
+    for (const aluna of reprograma.alunas) {
+      div.innerHTML += `<p>${aluna.nome} | ${aluna.dataDeNascimento}</p>`
+    }
+  },
 
   inserirAluna: function(n, d, s, i) {},
 
@@ -24,7 +31,7 @@ const reprograma = {
 btnEnviar.addEventListener("click", function(e) {
   e.preventDefault()
   console.log(nome.value, dateOfBirth.value, nasceuEmSP())
-  reprograma.inserirAluna(nome.value, dateOfBirth.value, nasceuEmSP())
+  reprograma.inserirAluna(nome.value, dateOfBirth.value, nasceuEmSP(), ++id)
 })
 
 function nasceuEmSP() {
@@ -32,3 +39,5 @@ function nasceuEmSP() {
   checkbox.forEach(item => (item.checked ? (isChecked = item.value) : ""))
   return isChecked
 }
+
+btnMostrar.addEventListener("click", reprograma.listarAlunas)

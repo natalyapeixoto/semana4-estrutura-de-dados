@@ -68,3 +68,7 @@ button:hover {
     color:white;
     transition: all 1s;
 }
+
+#mostrarListadeAlunas {
+    padding: 0 50px;
+}
