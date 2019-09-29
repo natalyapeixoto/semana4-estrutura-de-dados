@@ -22,17 +22,5 @@
 // 8- Dada a array const x = [23, 43, 63 ,73, 83, 93, 102];
 //Itere pela array somando mais 2 de cada item e crie uma nova array com os resultados gerados.
 
-// 9- dada a array
-const lista = [56, 89, 34, 12, 23, 55, 9]
-// ordene a lista array.
-
-for (let j = 0; j < lista.length; j++) {
-  for (let i = 0; i < lista.length; i++) {
-    if (lista[i] > lista[i + 1]) {
-      const aux = lista[i]
-      lista[i] = lista[i + 1]
-      lista[i + 1] = aux
-    }
-  }
-}
-console.log(lista)
+// 9- dada a array const lista = [56, 89, 34, 12, 23, 55, 9]
+// ordene a lista .
